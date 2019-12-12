@@ -14,27 +14,27 @@ page 50102 "CSD Seminar List"
         {
             repeater(Group)
             {
-                field("No.";"No.")
+                field("No."; "No.")
                 {
                     ApplicationArea = All;
                 }
 
-                field(Name;Name)
+                field(Name; Name)
                 {
                     ApplicationArea = All;
                 }
 
-                field("Seminar Price";"Seminar Price")
+                field("Seminar Price"; "Seminar Price")
                 {
                     ApplicationArea = All;
                 }
 
-                field("Minimum Participants";"Minimum Participants")
+                field("Minimum Participants"; "Minimum Participants")
                 {
                     ApplicationArea = All;
                 }
 
-                field("Maximum Participants";"Maximum Participants")
+                field("Maximum Participants"; "Maximum Participants")
                 {
                     ApplicationArea = All;
                 }
@@ -63,8 +63,8 @@ page 50102 "CSD Seminar List"
             {
                 action("Co&mments")
                 {
-                    // RunObject = page "CSD Seminar Comment Sheet";
-                    // RunPageLink = "Table Name" = const(Seminar), "No" = field("No.");
+                    RunObject = page "CSD Seminar Comment Sheet";
+                    RunPageLink = "Table Name" = const(Seminar), "No." = field("No.");
                     Image = Comment;
                     ApplicationArea = All;
                 }

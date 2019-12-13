@@ -71,7 +71,4 @@ page 50102 "CSD Seminar List"
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

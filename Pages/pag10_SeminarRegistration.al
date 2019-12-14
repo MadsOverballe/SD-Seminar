@@ -175,6 +175,16 @@ page 50110 "CSD Seminar Registration"
                     RunPageLink = "Document No." = Field("No.");
                     ApplicationArea = All;
                 }
+                action("&Post")
+                {
+                    Caption = '&Post';
+                    Image = PostDocument;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = F9;
+                    RunObject = codeunit "CSD Seminar-Post (Yes/No)";
+                }
             }
         }
     }

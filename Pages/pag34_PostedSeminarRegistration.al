@@ -8,6 +8,7 @@ page 50134 "CSD Posted Seminar Reg."
     Editable = false;
     PageType = Document;
     SourceTable = "CSD Posted Seminar Reg. Header";
+    UsageCategory = Tasks;
 
     layout
     {
@@ -165,7 +166,7 @@ page 50134 "CSD Posted Seminar Reg."
                     Caption = '&Charges';
                     Image = Costs;
                     RunObject = Page 50139;
-                                    RunPageLink = "Document No." = Field("No.");
+                    RunPageLink = "Document No." = Field("No.");
                     ApplicationArea = All;
                 }
             }

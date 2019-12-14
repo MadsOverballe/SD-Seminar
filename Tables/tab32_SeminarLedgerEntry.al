@@ -5,6 +5,8 @@ table 50132 "CSD Seminar Ledger Entry"
     //     - Created new table
 
     Caption = 'Seminar Ledger Entry';
+    LookupPageId = "CSD Seminar Ledger Entries";
+    DrillDownPageId = "CSD Seminar Ledger Entries";
 
     fields
     {
@@ -185,6 +187,10 @@ table 50132 "CSD Seminar Ledger Entry"
     keys
     {
         key(PK; "Entry No.")
+        {
+        }
+
+        key(key2; "Document No.", "Posting Date")
         {
         }
     }

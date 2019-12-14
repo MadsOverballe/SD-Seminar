@@ -147,7 +147,7 @@ page 50134 "CSD Posted Seminar Reg."
 
     actions
     {
-        area(navigation)
+        area(Navigation)
         {
             group("&Seminar Registration")
             {
@@ -169,6 +169,25 @@ page 50134 "CSD Posted Seminar Reg."
                     RunPageLink = "Document No." = Field("No.");
                     ApplicationArea = All;
                 }
+            }
+        }
+
+        area(Processing)
+        {
+            action("&Navigate") 
+            { 
+                Caption='&Navigate'; 
+                Image=Navigate; 
+                Promoted=true; 
+                PromotedCategory=Process; 
+                
+                trigger OnAction(); 
+                var 
+                    Navigate : page Navigate; 
+                begin 
+                    Navigate.SetDoc("Posting Date","No."); 
+                    Navigate.RUN; 
+                end;
             }
         }
     }
